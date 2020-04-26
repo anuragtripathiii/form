@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+    <style>
+        body{
+            font-family:'Anaheim';
+            font-size:1.2em;
+        }
+        #outside{
+            background-color:lightgoldenrodyellow;
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+        h1 {
+            font-size: 1.5em;
+            text-align: center;
+            text-transform: capitalize;
+        }
+
+        .input{
+            padding:15px;
+            color:red;
+        }
+
+        div + div {
+            margin-top: 1em;
+        }
+        form {
+
+            margin: 0 auto;
+            width: 50%;
+            /* To see the limits of the form */
+            height:30%;
+            position:center;
+            padding: 3.5em;
+            border: 1px solid #CCC;
+            border-radius: 1em;
+        }
+        input:hover{
+            border-radius:5px ;
+            border-color: orange;
+
+        }
+
+    </style>
+</head>
+<body>
+
+
+<div id="outside">
+
+
+
+
+    <form style="background-color:white">
+        <div>
+            <h1 id="title">Application</h1>
+            <p id="description"><strong>Note:</strong> Form is to be completed at least 21 days prior to date</p>
+        </div>
+        <fieldset>
+            <legend>Personal Details</legend>
+
+            <div  class="input">
+                <div>
+                    <label>Name:</label>
+                    <input style="width: 150px;color: red" type="text" required id="name" name="user_name" placeholder="Enter name here"></div>
+                <div>
+                    <label>Address:</label>
+                    <input type="Address" id="address" name="Address" placeholder="Enter address here"></div>
+                <div>
+                    <label id="email-label" for="Email">Email:</label>
+                    <input type="email" required id="email" name="user_email" placeholder="Enter email here"></div>
+                <div>
+                    <label id="iq-label" >IQ:</label>
+                    <input type="number" id="number" name="user_name" placeholder="Enter 10 digit number" min="1" max="9"></div>
+                <div>
+                    <label id="number-label" min="1" max="10">Phone Number:</label>
+                    <input type="contact" placeholder="enter contact"></input>
+                </div>
+
+                <!-- radio buttons-->
+                <div>
+
+                    <label>Gender</label>
+                    <p>
+                        <input type="radio" name="gender" value="male" checked>male</input><br>
+                        <input type="radio"  name="gender" value="female" >female</input><br>
+                        <input type="radio"  name="gender" value="other" >other</input><br>
+                    </p>
+                </div>
+                <label>BIRTH-DATE</label>
+                <input type="date"></input>
+        </fieldset>
+        <!-- check box-->
+
+        <br>
+        <fieldset>
+            <div>
+                <label>click on applicable</label>
+                <p>
+                    <input type="checkbox" name="tatoo" value="tatoo">i have tattoos</input><br>
+                    <input type="checkbox" name="tatto" value="tatto">i have tattoos</input><br>
+                    <input type="checkbox" name="tatt" value="tatt">i have tattoos</input><br>
+
+            </div>
+        </fieldset>
+        <div>
+            <fieldset>
+                <label>other:</label>
+                <select id="dropdown">
+                    <option value="other1">other1</option>
+                    <option value="other1">other2</option>
+                    <option value="other1">other3</option>
+                </select>
+
+
+
+                <label>more:</label>
+                <select id="dropdown2">
+
+                    <option value="hi">hi</option>
+                    <option value="hi">hxi</option>
+                    <option value="hi">hi</option>
+                    <option value="hi">hi</option>
+                </select>
+            </fieldset>
+
+            <!--text areas-->
+
+            <fieldset>
+
+                <legend>something in detail</legend>
+                <p>write here:</p>
+                <textarea rows="4" cols="45" placeholder="text here"></textarea>
+                <div>
+                    <p>important doc here</p>
+                    <button>attach files</button>
+                </div>
+            </fieldset>
+
+            <button type="submit">send </button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
